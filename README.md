@@ -90,7 +90,32 @@ Open `http://127.0.0.1:8765`. The server is intended for one local operator and 
 
 Tray coverage is inadequate for automatic inventory. Tray detection does not count individual products or reveal hidden stock. Product retrieval also remains experimental. No annotation-speed improvement, robust multi-frame fusion, or iPhone runtime has been demonstrated. Core ML export and raw-output parity were tested as engineering probes, not as a deployed phone application.
 
-Potential follow-ups include more varied labeled views, consistent tray-boundary annotations, better camera registration with persistent tray-ID ground truth, and assessment on an untouched third visit. These are future experiments, not completed capabilities.
+## Design alternatives and paths forward
+
+The implemented baseline separates localization from identity: Grounding DINO proposes regions, and DINOv2 retrieves visually similar catalog references. The custom YOLO source currently supplies boxes only. This separation made detection and recognition errors independently measurable and allowed catalog references to change without retraining a SKU classifier.
+
+The following alternatives are candidates for future experiments. They have not been shown to outperform the current system on this dataset.
+
+| Alternative | When it would be useful | Tradeoff and evidence needed |
+| --- | --- | --- |
+| **One YOLO class per SKU** | A stable catalog with enough labeled examples of each product, where direct box-and-identity predictions are useful | Requires maintaining classes as products change. Compare per-SKU detection and performance on unseen products against detection plus retrieval. |
+| **YOLO detection followed by catalog retrieval** | A changing catalog where new products should be added through reference images | Integrate the currently separate YOLO proposal path with retrieval. Measure correct localization and identity together, since crop errors can degrade matching. |
+| **Multiple reference views per product** | Side-facing, tilted, or partially obscured packages differ from the current front-facing references | Requires verified catalog views. Test whether additional references improve retrieval without increasing false acceptance of unfamiliar products. |
+| **Product-specific embedding training** | Generic DINOv2 features confuse similar packaging or product variants | Needs verified matching pairs and difficult nonmatching examples. Evaluate on held-out views and unfamiliar products to check for overfitting. |
+| **OCR or barcode evidence** | Readable text or codes can distinguish visually similar products | Glare, angle, and small text can make these signals unavailable. Measure coverage and identity accuracy, including a fallback when text or codes cannot be read. |
+| **Tray segmentation** | Exact visible boundaries or tray shape matter more than rectangular localization | Requires more detailed labels and a suitable definition for occluded boundaries. Compare boundary quality, annotation effort, and runtime. |
+| **A larger detector or scale-aware training** | Small, dense trays remain difficult after label consistency and data coverage improve | Increases compute and may overfit limited data. Compare recall by object size at a fixed false-positive and latency budget. Higher-resolution inference and tiling were already tested; those particular configurations failed the gate. |
+| **Multi-frame association and evidence fusion** | Different video frames expose complementary tray boundaries or product views | Requires reliable camera-motion handling and persistent tray IDs. Measure unique-tray recall, duplicate tracks, ID switches, and identity accuracy. The initial tracker did not establish an accuracy benefit. |
+| **Native iPhone inference** | Live camera feedback or operation without a Mac is required | Requires validating the selected checkpoint's export, preprocessing, box decoding, and camera-coordinate mapping. Measure accuracy, end-to-end latency, and sustained device behavior; the Mac export probe does not establish these. |
+
+### Proposed experiment sequence
+
+1. **Improve the evidence first.** Add diverse medium and close views of missed trays, verify physical-tray boundaries, and preserve reviewed negative crops. Keep every source video within one partition.
+2. **Isolate the next change.** Select one intervention and declare its comparison and acceptance criteria before running it. For retrieval, start with verified multi-view references; for detection, compare a data or training change against the frozen tray checkpoint. Avoid changing labels, architecture, and thresholds simultaneously if the goal is to identify what caused an improvement.
+3. **Evaluate the complete workflow.** Report detection precision and recall, correctly localized product identities, unfamiliar-product rejection, and measured review effort. A gain in one component does not establish a gain in the whole system.
+4. **Reserve a fresh assessment.** Freeze the chosen model and operating settings before evaluating an untouched third visit. Report results by view and object size alongside aggregate metrics. Treat any subsequent tuning as development, requiring another fresh assessment.
+
+These are proposed extensions to a completed experiment. No additional model gains, reliable video fusion, or phone deployment are claimed.
 
 ## Data and model dependencies
 
