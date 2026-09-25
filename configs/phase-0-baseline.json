@@ -1,0 +1,9 @@
+{
+  "detector": "IDEA-Research/grounding-dino-tiny",
+  "encoder": "facebook/dinov2-small",
+  "prompt": "a product display tray. a group of packaged products. a candy box.",
+  "box_threshold": 0.25,
+  "text_threshold": 0.25,
+  "detector_revision": "a2bb814dd30d776dcf7e30523b00659f4f141c71",
+  "encoder_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056"
+}

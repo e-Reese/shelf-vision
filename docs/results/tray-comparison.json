@@ -1,0 +1,456 @@
+{
+  "metrics": {
+    "all": {
+      "old": {
+        "images": 7,
+        "objects": 134,
+        "tp": 13,
+        "fp": 45,
+        "fn": 121,
+        "precision": 0.22413793103448276,
+        "recall": 0.09701492537313433,
+        "f1": 0.13541666666666666,
+        "per_image": [
+          {
+            "frame_id": "roi-0006",
+            "tp": 8,
+            "fp": 1,
+            "fn": 0,
+            "truth_count": 8,
+            "prediction_count": 9
+          },
+          {
+            "frame_id": "roi-0007",
+            "tp": 4,
+            "fp": 1,
+            "fn": 1,
+            "truth_count": 5,
+            "prediction_count": 5
+          },
+          {
+            "frame_id": "roi-0008",
+            "tp": 1,
+            "fp": 9,
+            "fn": 2,
+            "truth_count": 3,
+            "prediction_count": 10
+          },
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 7,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 7
+          },
+          {
+            "frame_id": "roi-0013",
+            "tp": 0,
+            "fp": 12,
+            "fn": 2,
+            "truth_count": 2,
+            "prediction_count": 12
+          },
+          {
+            "frame_id": "visit-002-IMG_3525-50",
+            "tp": 0,
+            "fp": 7,
+            "fn": 47,
+            "truth_count": 47,
+            "prediction_count": 7
+          },
+          {
+            "frame_id": "visit-002-IMG_3526-50",
+            "tp": 0,
+            "fp": 8,
+            "fn": 69,
+            "truth_count": 69,
+            "prediction_count": 8
+          }
+        ],
+        "known_recall": {
+          "matched": 9,
+          "total": 28,
+          "rate": 0.32142857142857145
+        },
+        "unknown_recall": {
+          "matched": 4,
+          "total": 106,
+          "rate": 0.03773584905660377
+        }
+      },
+      "new": {
+        "images": 7,
+        "objects": 134,
+        "tp": 13,
+        "fp": 7,
+        "fn": 121,
+        "precision": 0.65,
+        "recall": 0.09701492537313433,
+        "f1": 0.16883116883116883,
+        "per_image": [
+          {
+            "frame_id": "roi-0006",
+            "tp": 8,
+            "fp": 5,
+            "fn": 0,
+            "truth_count": 8,
+            "prediction_count": 13
+          },
+          {
+            "frame_id": "roi-0007",
+            "tp": 1,
+            "fp": 0,
+            "fn": 4,
+            "truth_count": 5,
+            "prediction_count": 1
+          },
+          {
+            "frame_id": "roi-0008",
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "truth_count": 3,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "roi-0013",
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "truth_count": 2,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "visit-002-IMG_3525-50",
+            "tp": 0,
+            "fp": 0,
+            "fn": 47,
+            "truth_count": 47,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "visit-002-IMG_3526-50",
+            "tp": 4,
+            "fp": 2,
+            "fn": 65,
+            "truth_count": 69,
+            "prediction_count": 6
+          }
+        ],
+        "known_recall": {
+          "matched": 8,
+          "total": 28,
+          "rate": 0.2857142857142857
+        },
+        "unknown_recall": {
+          "matched": 5,
+          "total": 106,
+          "rate": 0.04716981132075472
+        }
+      }
+    },
+    "visit1_close_oblique": {
+      "old": {
+        "images": 5,
+        "objects": 18,
+        "tp": 13,
+        "fp": 30,
+        "fn": 5,
+        "precision": 0.3023255813953488,
+        "recall": 0.7222222222222222,
+        "f1": 0.4262295081967213,
+        "per_image": [
+          {
+            "frame_id": "roi-0006",
+            "tp": 8,
+            "fp": 1,
+            "fn": 0,
+            "truth_count": 8,
+            "prediction_count": 9
+          },
+          {
+            "frame_id": "roi-0007",
+            "tp": 4,
+            "fp": 1,
+            "fn": 1,
+            "truth_count": 5,
+            "prediction_count": 5
+          },
+          {
+            "frame_id": "roi-0008",
+            "tp": 1,
+            "fp": 9,
+            "fn": 2,
+            "truth_count": 3,
+            "prediction_count": 10
+          },
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 7,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 7
+          },
+          {
+            "frame_id": "roi-0013",
+            "tp": 0,
+            "fp": 12,
+            "fn": 2,
+            "truth_count": 2,
+            "prediction_count": 12
+          }
+        ],
+        "known_recall": {
+          "matched": 9,
+          "total": 12,
+          "rate": 0.75
+        },
+        "unknown_recall": {
+          "matched": 4,
+          "total": 6,
+          "rate": 0.6666666666666666
+        }
+      },
+      "new": {
+        "images": 5,
+        "objects": 18,
+        "tp": 9,
+        "fp": 5,
+        "fn": 9,
+        "precision": 0.6428571428571429,
+        "recall": 0.5,
+        "f1": 0.5625,
+        "per_image": [
+          {
+            "frame_id": "roi-0006",
+            "tp": 8,
+            "fp": 5,
+            "fn": 0,
+            "truth_count": 8,
+            "prediction_count": 13
+          },
+          {
+            "frame_id": "roi-0007",
+            "tp": 1,
+            "fp": 0,
+            "fn": 4,
+            "truth_count": 5,
+            "prediction_count": 1
+          },
+          {
+            "frame_id": "roi-0008",
+            "tp": 0,
+            "fp": 0,
+            "fn": 3,
+            "truth_count": 3,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "roi-0013",
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "truth_count": 2,
+            "prediction_count": 0
+          }
+        ],
+        "known_recall": {
+          "matched": 8,
+          "total": 12,
+          "rate": 0.6666666666666666
+        },
+        "unknown_recall": {
+          "matched": 1,
+          "total": 6,
+          "rate": 0.16666666666666666
+        }
+      }
+    },
+    "visit2_wide_assisted": {
+      "old": {
+        "images": 2,
+        "objects": 116,
+        "tp": 0,
+        "fp": 15,
+        "fn": 116,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "per_image": [
+          {
+            "frame_id": "visit-002-IMG_3525-50",
+            "tp": 0,
+            "fp": 7,
+            "fn": 47,
+            "truth_count": 47,
+            "prediction_count": 7
+          },
+          {
+            "frame_id": "visit-002-IMG_3526-50",
+            "tp": 0,
+            "fp": 8,
+            "fn": 69,
+            "truth_count": 69,
+            "prediction_count": 8
+          }
+        ],
+        "known_recall": {
+          "matched": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "unknown_recall": {
+          "matched": 0,
+          "total": 100,
+          "rate": 0.0
+        }
+      },
+      "new": {
+        "images": 2,
+        "objects": 116,
+        "tp": 4,
+        "fp": 2,
+        "fn": 112,
+        "precision": 0.6666666666666666,
+        "recall": 0.034482758620689655,
+        "f1": 0.06557377049180328,
+        "per_image": [
+          {
+            "frame_id": "visit-002-IMG_3525-50",
+            "tp": 0,
+            "fp": 0,
+            "fn": 47,
+            "truth_count": 47,
+            "prediction_count": 0
+          },
+          {
+            "frame_id": "visit-002-IMG_3526-50",
+            "tp": 4,
+            "fp": 2,
+            "fn": 65,
+            "truth_count": 69,
+            "prediction_count": 6
+          }
+        ],
+        "known_recall": {
+          "matched": 0,
+          "total": 16,
+          "rate": 0.0
+        },
+        "unknown_recall": {
+          "matched": 4,
+          "total": 100,
+          "rate": 0.04
+        }
+      }
+    },
+    "negative_crops": {
+      "old": {
+        "images": 1,
+        "objects": 0,
+        "tp": 0,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "per_image": [
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 7,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 7
+          }
+        ],
+        "known_recall": {
+          "matched": 0,
+          "total": 0,
+          "rate": null
+        },
+        "unknown_recall": {
+          "matched": 0,
+          "total": 0,
+          "rate": null
+        }
+      },
+      "new": {
+        "images": 1,
+        "objects": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "per_image": [
+          {
+            "frame_id": "roi-0009",
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "truth_count": 0,
+            "prediction_count": 0
+          }
+        ],
+        "known_recall": {
+          "matched": 0,
+          "total": 0,
+          "rate": null
+        },
+        "unknown_recall": {
+          "matched": 0,
+          "total": 0,
+          "rate": null
+        }
+      }
+    }
+  },
+  "timings": {
+    "old": [
+      0.0498788749682717,
+      0.05299641698366031,
+      0.052801334008108824
+    ],
+    "new": [
+      0.053048792004119605,
+      0.05194100004155189,
+      0.04624716698890552
+    ]
+  },
+  "time_ratio": 0.9837062077555689,
+  "gate": {
+    "checks": {
+      "recall_gain": false,
+      "precision_loss": true,
+      "time_budget": true
+    },
+    "passes": false
+  },
+  "deployment_promoted": false,
+  "warning": "Previously inspected development validation, not independent new-visit testing. Mixed assistant and human label review; visit2 validation labels were baseline-assisted. No automatic deployment promotion.",
+  "protocol_sha256": "a2bb7c6a49a5bb3a87b460bf61f691137575da5f69314275274778b682f4c3ab",
+  "prediction_sha256": {
+    "old": "50ebc0e0033c08d20fa6db78ce9edfc59f3579c00d2dc2bc81f5eaf2baa13cdd",
+    "new": "0683622047b0b41c7f56638af4fa4b67d2652b15e8acdfe07992dbe408b99cff"
+  }
+}

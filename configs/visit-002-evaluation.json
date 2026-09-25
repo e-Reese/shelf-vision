@@ -1,0 +1,115 @@
+{
+  "capture_group": "visit-002",
+  "split": "test",
+  "frames": [
+    {
+      "frame_id": "visit-002-IMG_3523-20",
+      "video_path": "IMG_3523.MOV",
+      "requested_seconds": 2.891,
+      "actual_seconds": 2.885,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3523-20-shelf",
+          "bbox_xyxy": [
+            0,
+            960,
+            2160,
+            2880
+          ]
+        }
+      ],
+      "source_id": "27adc1f2c30866260972467eba2261b883bfb23b27fb6fbfbdb5e3b432d3748b"
+    },
+    {
+      "frame_id": "visit-002-IMG_3523-50",
+      "video_path": "IMG_3523.MOV",
+      "requested_seconds": 7.228,
+      "actual_seconds": 7.22,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3523-50-shelf",
+          "bbox_xyxy": [
+            0,
+            960,
+            2160,
+            2880
+          ]
+        }
+      ],
+      "source_id": "aa593e466bbff9d7f5d76077a4ebf413bdf69326fd7d696bf6813ed8bf8c358e"
+    },
+    {
+      "frame_id": "visit-002-IMG_3523-80",
+      "video_path": "IMG_3523.MOV",
+      "requested_seconds": 11.565,
+      "actual_seconds": 11.555,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3523-80-shelf",
+          "bbox_xyxy": [
+            0,
+            960,
+            2160,
+            2880
+          ]
+        }
+      ],
+      "source_id": "64c03c2a3e2b10df09ff1d9b73648672584e96ee01987753e775afd5b4e2b292"
+    },
+    {
+      "frame_id": "visit-002-IMG_3524-50",
+      "video_path": "IMG_3524.MOV",
+      "requested_seconds": 3.477,
+      "actual_seconds": 3.4683333333333333,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3524-50-shelf",
+          "bbox_xyxy": [
+            600,
+            960,
+            2160,
+            2880
+          ]
+        }
+      ],
+      "source_id": "152eb7c7aeee0cd53f88668931c92441512cc7347499cccaf7e7b5ab15dd361c"
+    },
+    {
+      "frame_id": "visit-002-IMG_3525-50",
+      "video_path": "IMG_3525.MOV",
+      "requested_seconds": 3.743,
+      "actual_seconds": 3.735,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3525-50-shelf",
+          "bbox_xyxy": [
+            0,
+            960,
+            1300,
+            2880
+          ]
+        }
+      ],
+      "source_id": "50f90dfc276ceff91914aba935fdf7a0e9202bbaf4e176128aa85be6bb30ed93"
+    },
+    {
+      "frame_id": "visit-002-IMG_3526-50",
+      "video_path": "IMG_3526.MOV",
+      "requested_seconds": 1.692,
+      "actual_seconds": 1.6833333333333333,
+      "rois": [
+        {
+          "roi_id": "visit-002-IMG_3526-50-shelf",
+          "bbox_xyxy": [
+            600,
+            960,
+            2160,
+            2880
+          ]
+        }
+      ],
+      "source_id": "6bb2521d7adaa19b8b98da265df2f289a245f275fd930b0c04fcd42789267ab6"
+    }
+  ],
+  "protocol_path": "reports/phase-2/visit-002-evaluation/protocol.json"
+}

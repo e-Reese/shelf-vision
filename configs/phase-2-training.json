@@ -1,0 +1,14 @@
+{
+  "initial_checkpoint": "yolo11n.pt",
+  "train": {
+    "epochs": 60, "patience": 15, "imgsz": 640, "batch": 4,
+    "seed": 0, "workers": 0, "optimizer": "AdamW", "lr0": 0.001,
+    "weight_decay": 0.0005, "warmup_epochs": 3, "cos_lr": true,
+    "amp": false, "cache": false, "mosaic": 0.0, "mixup": 0.0,
+    "cutmix": 0.0, "fliplr": 0.0, "flipud": 0.0, "degrees": 0.0,
+    "perspective": 0.0, "shear": 0.0, "scale": 0.2, "translate": 0.05,
+    "hsv_h": 0.01, "hsv_s": 0.2, "hsv_v": 0.2, "freeze": 0,
+    "deterministic": true
+  },
+  "evaluation": {"confidence": 0.25, "nms_iou": 0.5, "matching_iou": 0.5}
+}

@@ -1,0 +1,35 @@
+[project]
+name = "shelf-vision"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pillow>=11",
+    "pillow-heif>=0.22",
+    "numpy>=2,<=2.3.5",
+    "torch>=2.5",
+    "torchvision>=0.20",
+    "transformers>=4.50,<5",
+    "ultralytics>=8.3",
+    "coremltools>=8",
+    "fastapi>=0.141.1",
+    "uvicorn[standard]>=0.53.0",
+    "python-multipart>=0.0.32",
+    "httpx>=0.28.1",
+]
+
+[project.scripts]
+shelf-vision = "shelf_vision.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.16.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
